@@ -1,0 +1,174 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Ren x | babft V1.00", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - the config saving in the UI
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local Tab = Window:MakeTab({
+    Name = "Main",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+OrionLib:MakeNotification({
+    Name = "MESSAGE FROM THE OWNER",
+    Content = "Thanks for Trying our Ren x Script!",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+local Section = Tab:AddSection({
+    Name = "Your at The <Main> Tab"
+})
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+    Name = "auto farm",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Bac0nHck/Scripts/main/babftfarm'))()
+        print("button pressed")
+    end    
+})
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab2 = Window:MakeTab({
+    Name = "Others",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section2 = Tab2:AddSection({
+    Name = "Your at the <Others> Tab"
+})
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab2:AddButton({
+    Name = "Mobile hub | Many features",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/raimbowo1/m/main/o"))()
+        print("button pressed")
+    end    
+})
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Section2 = Tab2:AddSection({
+    Name = "👆 <Mobile hub> is made by?"
+})
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab2:AddButton({
+    Name = "Ghost hub | Many features",
+    Callback = function()
+        print("button pressed")
+    end    
+})
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Section2 = Tab2:AddSection({
+    Name = "👆 <Ghost hub> is made by rip_noob👆"
+})
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab2:AddButton({
+    Name = "System hub V2 | Official system hub | not made by me!",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/AHMEDPLPL/System-hub/main/System%20hub%20V2', true))()
+        print("button pressed")
+    end    
+})
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Section2 = Tab2:AddSection({
+    Name = "👆 System hub is made by unknown?👆"
+})
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab2:AddButton({
+    Name = "Ssh hub | Spanish",
+    Callback = function()
+        --[[
+        WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+        ]]
+        --🟦DISCORD🟦: https://discord.gg/4sA3JQj5AK
+        --If you don't find a script for one of the games mentioned in the description, --don't worry, contact me on our discord server 
+        --(Or just DM me, I'm "nescoroco")
+        
+        loadstring(game:HttpGet(('paste.myconan.net/489463.txt')))()
+        
+        --🟦DISCORD🟦: https://discord.gg/4sA3JQj5AK
+        --If you don't find a script for one of the games mentioned in the description, --don't worry, contact me on our discord server 
+        --(Or just DM me, I'm "descoroco")
+        print("button pressed")
+    end    
+})
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab2:AddButton({
+    Name = "Free and OP Script",
+    Callback = function()
+        --[[
+        WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+        ]]
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5ebefab5c68bfa67271dcbf6430d3c7d.lua"))()
+        --(is the script, is FREE and op)
+        
+        --Want OP settings? Join the discord!
+        --https://discord.gg/YJBPtp9eXN
+        
+        --Nexity
+        print("button pressed")
+    end    
+})
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
